@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task11</title>
+</head>
+<body>
+    <a href="./Index.html">Back</a>
+    <form>
+        
+        <label for="name">Name : </label>
+        <input id="name" name="name" type="text"/>
+        <br>
+        <label for="age">Age : </label>
+        <input id="age" name="Age" type="number"/>
+        <br>
+        <label for="phoneNo">Phone no : </label>
+        <input id="phoneNo" type="tel" name="phone no"/>
+        <br>
+        <label for="gender">Gender</label>
+        <input id="gender" type="radio" name="gender" value="male"/> Male
+        <input id="gender" type="radio" name="gender" value="female"/> female
+        <br>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email"/>
+        <br>
+        <label >File uploaded</label>
+        <input type="file" name="file"/>
+        <br>
+        <label for="rating">Rating</label>
+        <input name="rating" min="0" max="10" type="range" oninput="updateValue(this.value)"/>
+        <br>
+        <label for="city">City</label>
+        <input name="city" id="city" list="citylist"/>
+        <datalist id="citylist">
+            <option value="Chennai">Chennai</option>
+            <option value="coimbatore">Coimbatore</option>
+            <option value="maduri">Maduri</option>
+        </datalist>
+        <br>
+        <label for="dateAndTime">Date and Time</label>
+        <input type="datetime-local" name="dateAndTime" id="dateAndTime"/>
+    </form>
+</body>
+</html>
